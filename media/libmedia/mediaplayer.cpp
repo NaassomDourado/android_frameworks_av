@@ -44,10 +44,10 @@ using content::AttributionSourceState;
 
 MediaPlayer::MediaPlayer()
 {
+    MediaPlayer("");
 }
 
-MediaPlayer::MediaPlayer(const AttributionSourceState& attributionSource)
-        : mAttributionSource(attributionSource)
+MediaPlayer::MediaPlayer(const std::string opPackageName) : mOpPackageName(opPackageName)
 {
     ALOGV("constructor");
     mListener = NULL;

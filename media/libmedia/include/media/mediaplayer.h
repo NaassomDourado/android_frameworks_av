@@ -213,7 +213,7 @@ class MediaPlayer : public BnMediaPlayerClient,
 {
 public:
     MediaPlayer();
-    explicit MediaPlayer(const android::content::AttributionSourceState& mAttributionSource);
+    explicit MediaPlayer(const std::string opPackageName);
     ~MediaPlayer();
             void            died();
             void            disconnect();
