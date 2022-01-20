@@ -21,7 +21,6 @@
 #include <utils/Vector.h>
 #include <system/graphics.h>
 #include <media/NdkImage.h>
-#include <private/media/NdkImage.h>
 
 using namespace android;
 
